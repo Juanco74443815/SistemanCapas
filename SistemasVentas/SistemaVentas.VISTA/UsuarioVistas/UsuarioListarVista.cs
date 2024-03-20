@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaVentas.BSS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,15 +17,16 @@ namespace SistemaVentas.VISTA.UsuarioVistas
         {
             InitializeComponent();
         }
+        UsuarioBss bss = new UsuarioBss();
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-        usuario
+       
         private void UsuarioListarVista_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = bss.ListarUsuarioBss();
         }
     }
 }

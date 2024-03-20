@@ -35,11 +35,16 @@ namespace SistemaVentas.VISTA.PersonaVistas
             p.Correo = textBox5.Text;
 
 
-
+            bss.InsertarPersonaBss(p);
             MessageBox.Show("Se guardo correctamente la persona");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PersonaInsertarVista_Load(object sender, EventArgs e)
         {
 
         }

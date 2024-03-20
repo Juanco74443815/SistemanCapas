@@ -1,21 +1,19 @@
 ﻿using SistemasVentas.Dal;
-using SistemasVentas.DAL;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SistemasVentas.Dal;
 
 namespace SistemaVentas.BSS
 {
-    public class TipoProd
+    public class ProveedorBss
     {
-        TipoProdDal dal = new TipoProdDal();
-        public DataTable ListarTipoProdBss()
+        ProveedorDal dal = new ProveedorDal();
+        public DataTable ListarProveedorBss()
         {
-            return dal.ListarTipoProdDal();
+            return dal.ListarProveedoresDal();
         }
     }
 }

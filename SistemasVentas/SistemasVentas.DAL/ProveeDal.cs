@@ -10,7 +10,7 @@ namespace SistemasVentas.Dal
 {
     public class ProveeDal
     {
-        public DataTable ListarProveeDal()
+        public DataTable ListarProveesDal()
         {
             string consulta = "select * from Provee";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");

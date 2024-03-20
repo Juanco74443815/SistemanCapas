@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.Dal
 {
-    internal class UsuarioRol
+    public class UsuarioRolDal
     {
-        public DataTable ListarUsuarioRolDal()
+        public DataTable ListarUsuariosRolDal()
         {
             string consulta = "select * from UsuarioRol";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");

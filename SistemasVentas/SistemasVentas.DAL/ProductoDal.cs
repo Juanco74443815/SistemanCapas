@@ -10,7 +10,7 @@ namespace SistemasVentas.Dal
 {
     public class ProductoDal
     {
-        public DataTable ListarProductoDal()
+        public DataTable ListarProductosDal()
         {
             string consulta = "select * from Producto";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
