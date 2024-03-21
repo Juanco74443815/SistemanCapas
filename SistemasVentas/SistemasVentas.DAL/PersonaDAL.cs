@@ -60,7 +60,7 @@ namespace SistemasVentas.DAL
 
         public void EliminarPersonaDal(int id)
         {
-            string consulta = "delete from person where idpersona" + id;
+            string consulta = "delete from persona where idpersona=" + id;
             conexion.Ejecutar(consulta);
         }
     }
