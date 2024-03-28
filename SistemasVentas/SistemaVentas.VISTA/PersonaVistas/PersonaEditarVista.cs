@@ -41,7 +41,7 @@ namespace SistemaVentas.VISTA.PersonaVistas
             persona.Telefono = textBox3.Text;
             persona.CI = textBox4.Text;
             persona.Correo = textBox5.Text;
-            
+
             bss.EditarPersonaBss(persona);
             MessageBox.Show("Datos Actualizados");
         }
