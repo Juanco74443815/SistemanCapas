@@ -16,5 +16,10 @@ namespace SistemaVentas.VISTA.InicioVistas
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

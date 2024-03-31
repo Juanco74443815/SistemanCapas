@@ -23,5 +23,10 @@ namespace SistemaVentas.VISTA.RolVistas
         {
             dataGridView1.DataSource = bss.ListarRolBss();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

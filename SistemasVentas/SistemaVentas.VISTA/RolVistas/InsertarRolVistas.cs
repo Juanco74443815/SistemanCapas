@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SistemaVentas.BSS;
+using SistemaVentas.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,23 @@ namespace SistemaVentas.VISTA.RolVistas
         public InsertarRolVistas()
         {
             InitializeComponent();
+        }
+        RolBss bss = new RolBss();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Rol p = new Rol();
+            p.Nombre = textBox1.Text;
+            bss.InsertarRolbss(p);
+            MessageBox.Show("Se guardo correctamente la persona");
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

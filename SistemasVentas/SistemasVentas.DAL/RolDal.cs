@@ -1,4 +1,5 @@
 ﻿using SistemasVentas.DAL;
+using SistemaVentas.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,11 +11,17 @@ namespace SistemasVentas.Dal
 {
     public class RolDal
     {
-        public DataTable ListarRolesDal()
+        public DataTable LIstarRolDal()
         {
             string consulta = "select * from rol";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
+
+        }
+        public void InsertarRolDal(Rol rol)
+        {
+            string consulta = "insert into TipoProd values('" + rol.Nombre + "'," + "'Activo')";
+            conexion.Ejecutar(consulta);
         }
     }
 }
