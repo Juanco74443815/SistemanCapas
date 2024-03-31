@@ -47,9 +47,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(78, 59);
+            pictureBox3.Location = new Point(319, 77);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(150, 93);
+            pictureBox3.Size = new Size(147, 81);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 23;
             pictureBox3.TabStop = false;
@@ -57,9 +57,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(78, 222);
+            pictureBox2.Location = new Point(322, 201);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(146, 55);
+            pictureBox2.Size = new Size(144, 80);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 22;
             pictureBox2.TabStop = false;
@@ -67,9 +67,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(78, 355);
+            pictureBox1.Location = new Point(319, 323);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(146, 80);
+            pictureBox1.Size = new Size(147, 74);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
@@ -77,9 +77,9 @@
             // button3
             // 
             button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(78, 432);
+            button3.Location = new Point(348, 403);
             button3.Name = "button3";
-            button3.Size = new Size(146, 38);
+            button3.Size = new Size(108, 29);
             button3.TabIndex = 20;
             button3.Text = "Gerente";
             button3.UseVisualStyleBackColor = true;
@@ -87,19 +87,20 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(78, 274);
+            button2.Location = new Point(348, 287);
             button2.Name = "button2";
-            button2.Size = new Size(150, 46);
+            button2.Size = new Size(108, 30);
             button2.TabIndex = 19;
             button2.Text = "Inventario";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(78, 149);
+            button1.Location = new Point(348, 164);
             button1.Name = "button1";
-            button1.Size = new Size(150, 31);
+            button1.Size = new Size(98, 29);
             button1.TabIndex = 18;
             button1.Text = "Venta";
             button1.UseVisualStyleBackColor = true;
@@ -107,7 +108,7 @@
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(78, 476);
+            checkBox3.Location = new Point(477, 413);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(48, 19);
             checkBox3.TabIndex = 17;
@@ -117,7 +118,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(78, 316);
+            checkBox2.Location = new Point(472, 298);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(48, 19);
             checkBox2.TabIndex = 16;
@@ -127,7 +128,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(78, 186);
+            checkBox1.Location = new Point(465, 176);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(48, 19);
             checkBox1.TabIndex = 15;
