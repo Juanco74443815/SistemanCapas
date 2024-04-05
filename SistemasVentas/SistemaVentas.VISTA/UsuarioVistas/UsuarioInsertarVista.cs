@@ -20,27 +20,33 @@ namespace SistemaVentas.VISTA.UsuarioVistas
             InitializeComponent();
         }
         public static int IdPersonaSeleccionada = 0;
+        UsuarioBss bssu = new UsuarioBss();
         PersonaBss bss = new PersonaBss();
         private void button1_Click(object sender, EventArgs e)
         {
             PersonaListarVista fr = new PersonaListarVista();
             if (fr.ShowDialog() == DialogResult.OK)
             {
-                Persona persona = bss.ObtenerIdBss(IdPersonaSeleccionada);
-                textBox1.Text = persona.Nombre + " " + persona.Apellido;
+                Usuario usuario = new Usuario();
+                usuario.IdPersona = IdPersonaSeleccionada;
+                usuario.NombreUser = textBox1.Text;
+                usuario.Contraseña = textBox2.Text;
+                usuario.FechaReg = dateTimePicker1.Value;
+
+                bssu.InsertarUsuarioBss(usuario);
+
+                MessageBox.Show("Usuario Registrado");
             }
         }
-        UsuarioBss bssuser= new UsuarioBss();
+        UsuarioBss bssuser = new UsuarioBss();
         private void button2_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new Usuario();
-            usuario.IdPersona = IdPersonaSeleccionada;
-            usuario.NombreUser = textBox2.Text;
-            usuario.Contraseña = textBox3.Text;
-            usuario.FechaReg = dateTimePicker1.Value.ToString();
 
-            bssuser.InsertarUsuarioBss(usuario);
-            MessageBox.Show("Usuario registrado");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

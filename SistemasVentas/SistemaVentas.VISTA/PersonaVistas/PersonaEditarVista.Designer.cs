@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonaEditarVista));
             button2 = new Button();
             button1 = new Button();
             textBox5 = new TextBox();
@@ -45,9 +46,10 @@
             // button2
             // 
             button2.DialogResult = DialogResult.Cancel;
-            button2.Location = new Point(262, 275);
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(409, 335);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(116, 38);
             button2.TabIndex = 35;
             button2.Text = "CANCELAR";
             button2.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // button1
             // 
             button1.DialogResult = DialogResult.OK;
-            button1.Location = new Point(67, 275);
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(214, 335);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(118, 38);
             button1.TabIndex = 34;
             button1.Text = "GUARDAR";
             button1.UseVisualStyleBackColor = true;
@@ -65,35 +68,35 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(199, 225);
+            textBox5.Location = new Point(333, 257);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(229, 23);
             textBox5.TabIndex = 33;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(199, 187);
+            textBox4.Location = new Point(333, 219);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(229, 23);
             textBox4.TabIndex = 32;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(199, 142);
+            textBox3.Location = new Point(333, 174);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(229, 23);
             textBox3.TabIndex = 31;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(199, 99);
+            textBox2.Location = new Point(333, 131);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(229, 23);
             textBox2.TabIndex = 30;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(199, 60);
+            textBox1.Location = new Point(333, 92);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(229, 23);
             textBox1.TabIndex = 29;
@@ -101,45 +104,55 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(67, 225);
+            label5.BackColor = SystemColors.HighlightText;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(236, 254);
             label5.Name = "label5";
-            label5.Size = new Size(53, 15);
+            label5.Size = new Size(73, 21);
             label5.TabIndex = 28;
             label5.Text = "CORREO";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(102, 187);
+            label4.BackColor = SystemColors.HighlightText;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(284, 216);
             label4.Name = "label4";
-            label4.Size = new Size(18, 15);
+            label4.Size = new Size(25, 21);
             label4.TabIndex = 27;
             label4.Text = "CI";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(56, 145);
+            label3.BackColor = SystemColors.HighlightText;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(219, 174);
             label3.Name = "label3";
-            label3.Size = new Size(64, 15);
+            label3.Size = new Size(90, 21);
             label3.TabIndex = 26;
             label3.Text = "TELEFONO";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(54, 102);
+            label2.BackColor = SystemColors.HighlightText;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(215, 131);
             label2.Name = "label2";
-            label2.Size = new Size(66, 15);
+            label2.Size = new Size(94, 21);
             label2.TabIndex = 25;
             label2.Text = "APELLIDOS";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(64, 63);
+            label1.BackColor = SystemColors.HighlightText;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(230, 92);
             label1.Name = "label1";
-            label1.Size = new Size(56, 15);
+            label1.Size = new Size(79, 21);
             label1.TabIndex = 24;
             label1.Text = "NOMBRE";
             // 
@@ -148,7 +161,9 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
-            ClientSize = new Size(466, 339);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(799, 460);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox5);

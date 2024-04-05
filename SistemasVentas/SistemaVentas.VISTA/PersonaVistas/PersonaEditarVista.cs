@@ -30,7 +30,7 @@ namespace SistemaVentas.VISTA.PersonaVistas
             textBox1.Text = persona.Nombre;
             textBox2.Text = persona.Apellido;
             textBox3.Text = persona.Telefono;
-            textBox4.Text = persona.CI;
+            textBox4.Text = persona.Ci;
             textBox5.Text = persona.Correo;
         }
 
@@ -39,7 +39,7 @@ namespace SistemaVentas.VISTA.PersonaVistas
             persona.Nombre = textBox1.Text;
             persona.Apellido = textBox2.Text;
             persona.Telefono = textBox3.Text;
-            persona.CI = textBox4.Text;
+            persona.Ci = textBox4.Text;
             persona.Correo = textBox5.Text;
 
             bss.EditarPersonaBss(persona);

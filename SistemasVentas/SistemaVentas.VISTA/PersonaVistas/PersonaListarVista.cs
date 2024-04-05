@@ -58,8 +58,8 @@ namespace SistemaVentas.VISTA.PersonaVistas
         private void button4_Click(object sender, EventArgs e)
         {
             int IdPersonaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
-            DialogResult result = MessageBox.Show("Estas seguro de Eliminar esta persona","Eliminando",MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes) 
+            DialogResult result = MessageBox.Show("Estas seguro de Eliminar esta persona", "Eliminando", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
             {
                 bss.EliminarPersonaBss(IdPersonaSeleccionada);
                 dataGridView1.DataSource = bss.ListarPersonaBss();

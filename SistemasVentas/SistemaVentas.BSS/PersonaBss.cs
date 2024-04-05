@@ -14,14 +14,13 @@ namespace SistemaVentas.BSS
         PersonaDal dal = new PersonaDal();
         public DataTable ListarPersonaBss()
         {
-            return dal.ListarPersonasDal();
+            return dal.ListarPersonaDal();
         }
-
         public void InsertarPersonaBss(Persona persona)
         {
-            dal.InsertarPersonalDal(persona);   
+            dal.InsertarPersonaDal(persona);
         }
-        public Persona ObtenerIdBss(int id) 
+        public Persona ObtenerIdBss(int id)
         {
             return dal.ObtenerPersonaId(id);
         }
@@ -29,9 +28,9 @@ namespace SistemaVentas.BSS
         {
             dal.EditarPersonaDal(persona);
         }
-        public void EliminarPersonaBss(int id) 
-        { 
-            dal.EliminarPersonaDal(id);   
+        public void EliminarPersonaBss(int id)
+        {
+            dal.EliminarPersonaDal(id);
         }
     }
 }

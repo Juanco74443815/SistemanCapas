@@ -1,4 +1,5 @@
 ﻿using SistemasVentas.Dal;
+using SistemaVentas.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,7 +14,23 @@ namespace SistemaVentas.BSS
         ProveeDal dal = new ProveeDal();
         public DataTable ListarProveeBss()
         {
-            return dal.ListarProveesDal();
+            return dal.ListarProveeDal();
+        }
+        public void InsertarProveeBss(Provee provee)
+        {
+            dal.InsertarProveeDal(provee);
+        }
+        public Provee ObtenerProveeIdBss(int id)
+        {
+            return dal.ObtenerProveeIdDal(id);
+        }
+        public void EditarProveeBss(Provee provee)
+        {
+            dal.EditarProveeDal(provee);
+        }
+        public void EliminarProveeBss(int id)
+        {
+            dal.EliminarProveeDal(id);
         }
     }
 }

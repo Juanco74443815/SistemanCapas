@@ -1,12 +1,12 @@
-﻿using SistemasVentas.Dal;
-using SistemasVentas.DAL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemasVentas.Dal;
+using SistemasVentas.DAL;
+using SistemaVentas.Modelo;
 
 namespace SistemaVentas.BSS
 {
@@ -15,7 +15,23 @@ namespace SistemaVentas.BSS
         TipoProdDal dal = new TipoProdDal();
         public DataTable ListarTipoProdBss()
         {
-            return dal.ListarTiposProductosDal();
+            return dal.ListarTipoProdDal();
+        }
+        public void InsertarTipoProdBss(TipoProd tipoProd)
+        {
+            dal.InsertarTipoProdDal(tipoProd);
+        }
+        public TipoProd ObtenerTipoProdIdBss(int id)
+        {
+            return dal.ObtenerTipoProdIdDal(id);
+        }
+        public void EditarTipoProdBss(TipoProd tipoProd)
+        {
+            dal.EditarTipoProdDal(tipoProd);
+        }
+        public void EliminarTipoProdBss(int id)
+        {
+            dal.EliminarTipoProdDal(id);
         }
     }
 }

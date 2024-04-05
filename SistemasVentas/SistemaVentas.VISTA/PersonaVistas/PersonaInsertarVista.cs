@@ -31,7 +31,7 @@ namespace SistemaVentas.VISTA.PersonaVistas
             p.Nombre = textBox1.Text;
             p.Apellido = textBox2.Text;
             p.Telefono = textBox3.Text;
-            p.CI = textBox4.Text;
+            p.Ci = textBox4.Text;
             p.Correo = textBox5.Text;
 
 

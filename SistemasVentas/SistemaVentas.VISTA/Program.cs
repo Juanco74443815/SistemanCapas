@@ -1,4 +1,4 @@
-using SistemaVentas.VISTA.InicioVistas;
+using SistemaVentas.VISTA;
 
 namespace SistemaVentas.VISTA
 {
@@ -13,7 +13,7 @@ namespace SistemaVentas.VISTA
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new login());
+            Application.Run(new PantallaVistas.PantallaIngresarVistas());
         }
     }
 }

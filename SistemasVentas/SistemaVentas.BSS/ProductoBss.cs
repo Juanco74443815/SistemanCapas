@@ -1,4 +1,5 @@
 ﻿using SistemasVentas.Dal;
+using SistemaVentas.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,7 +14,23 @@ namespace SistemaVentas.BSS
         ProductoDal dal = new ProductoDal();
         public DataTable ListarProductoBss()
         {
-            return dal.ListarProductosDal();
+            return dal.ListarProductoDal();
+        }
+        public void InsertarProductoBss(Producto producto)
+        {
+            dal.InsertarProductoDal(producto);
+        }
+        public Producto ObtenerProductoIdBss(int id)
+        {
+            return dal.ObtenerProductoIdDal(id);
+        }
+        public void EditarProductoBss(Producto producto)
+        {
+            dal.EditarProductoDal(producto);
+        }
+        public void EliminarProductoBss(int id)
+        {
+            dal.EliminarProductoDal(id);
         }
     }
 }

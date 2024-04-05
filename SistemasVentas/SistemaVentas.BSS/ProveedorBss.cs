@@ -1,4 +1,5 @@
 ﻿using SistemasVentas.Dal;
+using SistemaVentas.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,7 +14,23 @@ namespace SistemaVentas.BSS
         ProveedorDal dal = new ProveedorDal();
         public DataTable ListarProveedorBss()
         {
-            return dal.ListarProveedoresDal();
+            return dal.ListarProveedorDal();
+        }
+        public void InsertarPorveedorBss(Proveedor proveedor)
+        {
+            dal.InsertarProveedorDal(proveedor);
+        }
+        public Proveedor ObtenerProveedorIdBss(int id)
+        {
+            return dal.ObtenerProveedorIdDal(id);
+        }
+        public void EditarProveedorBss(Proveedor proveedor)
+        {
+            dal.EditarProveedorDal(proveedor);
+        }
+        public void EliminarProveedorBss(int id)
+        {
+            dal.EliminarProveedorDal(id);
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioInsertarVista));
             label1 = new Label();
             textBox1 = new TextBox();
             button1 = new Button();
@@ -44,7 +45,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(46, 27);
+            label1.Location = new Point(153, 101);
             label1.Name = "label1";
             label1.Size = new Size(59, 15);
             label1.TabIndex = 0;
@@ -52,14 +53,14 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(131, 19);
+            textBox1.Location = new Point(248, 101);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(214, 23);
+            textBox1.Size = new Size(336, 23);
             textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(351, 19);
+            button1.Location = new Point(623, 100);
             button1.Name = "button1";
             button1.Size = new Size(166, 23);
             button1.TabIndex = 2;
@@ -69,7 +70,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(181, 79);
+            textBox2.Location = new Point(248, 153);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(336, 23);
             textBox2.TabIndex = 4;
@@ -77,7 +78,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(46, 87);
+            label2.Location = new Point(104, 161);
             label2.Name = "label2";
             label2.Size = new Size(108, 15);
             label2.TabIndex = 3;
@@ -85,17 +86,17 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(131, 140);
+            textBox3.Location = new Point(248, 214);
             textBox3.Name = "textBox3";
             textBox3.PasswordChar = '*';
-            textBox3.Size = new Size(386, 23);
+            textBox3.Size = new Size(336, 23);
             textBox3.TabIndex = 6;
             textBox3.UseSystemPasswordChar = true;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(46, 148);
+            label3.Location = new Point(144, 222);
             label3.Name = "label3";
             label3.Size = new Size(68, 15);
             label3.TabIndex = 5;
@@ -104,7 +105,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(46, 198);
+            label4.Location = new Point(113, 272);
             label4.Name = "label4";
             label4.Size = new Size(99, 15);
             label4.TabIndex = 7;
@@ -112,14 +113,14 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(160, 190);
+            dateTimePicker1.Location = new Point(248, 266);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(235, 23);
+            dateTimePicker1.Size = new Size(336, 23);
             dateTimePicker1.TabIndex = 8;
             // 
             // button2
             // 
-            button2.Location = new Point(69, 296);
+            button2.Location = new Point(136, 370);
             button2.Name = "button2";
             button2.Size = new Size(119, 28);
             button2.TabIndex = 9;
@@ -129,18 +130,21 @@
             // 
             // button3
             // 
-            button3.Location = new Point(351, 296);
+            button3.Location = new Point(418, 370);
             button3.Name = "button3";
             button3.Size = new Size(119, 28);
             button3.TabIndex = 10;
             button3.Text = "CANCELAR";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // UsuarioInsertarVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(592, 410);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(937, 549);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(dateTimePicker1);
